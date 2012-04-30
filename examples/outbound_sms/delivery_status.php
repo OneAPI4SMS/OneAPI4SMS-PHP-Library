@@ -2,10 +2,10 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "2";									// User ID of the Customer
-$password = "178dgsj7821";							// Api Key of the Customer
-$senderAddress = "17184756239";					 	// Sender Address for the Message 
-$requestId = "071afe810d57b31703af5c810d1ae9ae";	// Issuer Request ID 	
+$username = "";						// User ID of the Customer
+$password = "";						// Api Key of the Customer
+$senderAddress = "";				 	// Sender Address for the Message 
+$requestId = "";					// Issuer Request ID 	
 											
 // Creating object of the OneApi4Sms class
 $oneApi4SmsObject = new OneApi4Sms($username, $password);
