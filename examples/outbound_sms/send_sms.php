@@ -2,8 +2,8 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "2";									// User ID of the Customer
-$password = "178dgsj7821";							// Api Key of the Customer
+$username = "";									// User ID of the Customer
+$password = "";   							// Api Key of the Customer
 $senderAddress = "";			 			
 
 // Creating object of the OneApi4Sms class
