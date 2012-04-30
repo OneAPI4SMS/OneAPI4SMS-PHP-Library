@@ -11,7 +11,7 @@ $CountryAbbreviation = "USA";
  * Check for correct codes here "examples/account/find_available_addresses.php"
  * For wrong MSISDN code error will be : "The %1 is not a valid msisdn" 	
  */
-$msisdn = "140833709999";							
+$msisdn = "";							
 										
 // Each Header parameter should be a separate array element
 $headers = array(
