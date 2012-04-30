@@ -2,9 +2,9 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "3";									// User ID of the Customer
-$password = "fkdk893e8a9";							// Api Key of the Customer
-$options['reportFormat'] = "xml";			 		// it can be xml, json or csv
+$username = "";							        // User ID of the Customer
+$password = "";							        // Api Key of the Customer
+$options['reportFormat'] = "xml";		// It can be xml, json or csv
 
 // Creating object of the OneApi4Sms class
 $oneApi4SmsObject = new OneApi4Sms($username, $password);
