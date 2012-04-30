@@ -2,8 +2,8 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "3";									// User ID of the Customer
-$password = "fkdk893e8a9";							// Api Key of the Customer
+$username = "";									// User ID of the Customer
+$password = "";							// Api Key of the Customer
 $CountryAbbreviation = "ESP";	
 $options['areacode'] = "";
 $options['pattern'] = "";
