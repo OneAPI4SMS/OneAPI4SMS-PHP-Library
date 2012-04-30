@@ -2,7 +2,7 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "";									// User ID of the Customer
+$username = "";							    // User ID of the Customer
 $password = "";				    			// Api Key of the Customer
 $destinationAddress = "";				// Destination Address of the message
 
