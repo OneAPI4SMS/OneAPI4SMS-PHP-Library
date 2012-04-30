@@ -2,13 +2,13 @@
 require('../../lib/oneapi4sms.class.php');
 
 // Enter Your Credentials here
-$username = "3";									// User ID of the Customer
-$password = "fkdk893e8a9";							// Api Key of the Customer
-$options['destinationAddress'] = "17146841887";		// Destination Address of the message
+$username = "";					// User ID of the Customer
+$password = "";					// Api Key of the Customer
+$options['destinationAddress'] = "";		// Destination Address of the message
 $options['callbackData'] = "";	
 $options['clientCorrelator'] = "";
 $options['criteria'] = "";
-$options['notificationFormat'] = "1";				// 1 for JSON		 		
+$options['notificationFormat'] = "1";		// 1 for JSON		 		
 $options['notifyURL'] = "http://your-url";	// URL to recieve messages from the oneapi4sms.com API
 
 // Each Header parameter should be a separate array element
