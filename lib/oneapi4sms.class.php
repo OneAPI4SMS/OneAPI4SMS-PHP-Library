@@ -158,15 +158,22 @@ class OneApi4Sms{
 	 * Function for sending a message
 	 * 
 	 * @param int $senderAddress
+     * @param string $message
+     * @param int $receiverAddress
 	 * @return mixed $responseData 
 	 */
-	public function sendSMS($senderAddress){
+	public function sendSMS($senderAddress, $message, $receiverAddress){
 				
 		// Creating parameters
 		$requestURL = $this->baseRequestURL . $this->outboundURL. $senderAddress . "/requests";	
 
+        $data['message'] = urlencode($message);
+        $data['address'] = $receiverAddress;
+        
+        $data = $this->parseOptions($data);
+        
 		// CURL Request
-		$responseData = $this->getResponseFromAPI($requestURL);
+		$responseData = $this->getResponseFromAPI($requestURL, $data);
 		
 		return $responseData;
 	}
