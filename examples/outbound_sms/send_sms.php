@@ -10,7 +10,7 @@ $senderAddress = "";
 $oneApi4SmsObject = new OneApi4Sms($username, $password);
 
 // data returned from server in JSON format
-$jsonData = $oneApi4SmsObject->sendSMS($senderAddress);
+$jsonData = $oneApi4SmsObject->sendSMS($senderAddress, $message, $receiverAddress);
 print_r($jsonData);
 
 // decoded data for data processing 
