@@ -74,7 +74,8 @@ class OneApi4Sms{
 			
 		// Creating parameters
 		$dataString = $this->parseOptions($options);
-		$requestURL = $this->baseRequestURL . $this->accountURL . "availableAddresses/". $CountryAbbreviation;
+		$arg="?".$dataString;
+		$requestURL = $this->baseRequestURL . $this->accountURL . "availableAddresses/". $CountryAbbreviation.$arg;
 
 		// CURL Request
 		$responseData = $this->getResponseFromAPI($requestURL, $dataString);
